@@ -1,0 +1,1835 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManager",
+        "printedName": "NetworkManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkManager",
+                "printedName": "NetworkSDK.NetworkManager",
+                "usr": "s:10NetworkSDK0A7ManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkConfiguration",
+                "printedName": "NetworkSDK.NetworkConfiguration",
+                "usr": "s:10NetworkSDK0A13ConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NetworkSDK0A7ManagerC13configurationAcA0A13ConfigurationV_tcfc",
+            "mangledName": "$s10NetworkSDK0A7ManagerC13configurationAcA0A13ConfigurationV_tcfc",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC3get4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC3get4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "patch",
+            "printedName": "patch(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC5patch8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC5patch8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "patch",
+            "printedName": "patch(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC5patch4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC5patch4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "post",
+            "printedName": "post(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC4post8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC4post8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "post",
+            "printedName": "post(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC4post4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC4post4type8endPoint7Combine12AnyPublisherVyxAA0A5ErrorOGxm_AA8EndpointVtSeRzlF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A7ManagerC6delete8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A7ManagerC6delete8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10NetworkSDK0A7ManagerC",
+        "mangledName": "$s10NetworkSDK0A7ManagerC",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.HTTPMethod.Type) -> NetworkSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkSDK.HTTPMethod",
+                        "usr": "s:10NetworkSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK10HTTPMethodO3getyA2CmF",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO3getyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.HTTPMethod.Type) -> NetworkSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkSDK.HTTPMethod",
+                        "usr": "s:10NetworkSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK10HTTPMethodO4postyA2CmF",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO4postyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.HTTPMethod.Type) -> NetworkSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkSDK.HTTPMethod",
+                        "usr": "s:10NetworkSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK10HTTPMethodO3putyA2CmF",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO3putyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.HTTPMethod.Type) -> NetworkSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkSDK.HTTPMethod",
+                        "usr": "s:10NetworkSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK10HTTPMethodO5patchyA2CmF",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO5patchyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.HTTPMethod.Type) -> NetworkSDK.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkSDK.HTTPMethod",
+                        "usr": "s:10NetworkSDK10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK10HTTPMethodO6deleteyA2CmF",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO6deleteyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO8rawValueSSvp",
+            "moduleName": "NetworkSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s10NetworkSDK10HTTPMethodO8rawValueSSvg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NetworkSDK.HTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkSDK.HTTPMethod",
+                    "usr": "s:10NetworkSDK10HTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NetworkSDK10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10NetworkSDK10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "NetworkSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NetworkSDK10HTTPMethodO",
+        "mangledName": "$s10NetworkSDK10HTTPMethodO",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Endpoint",
+        "printedName": "Endpoint",
+        "declKind": "Struct",
+        "usr": "s:10NetworkSDK8EndpointV",
+        "mangledName": "$s10NetworkSDK8EndpointV",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkConfiguration",
+        "printedName": "NetworkConfiguration",
+        "declKind": "Struct",
+        "usr": "s:10NetworkSDK0A13ConfigurationV",
+        "mangledName": "$s10NetworkSDK0A13ConfigurationV",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthorizationType",
+        "printedName": "AuthorizationType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.AuthorizationType.Type) -> NetworkSDK.AuthorizationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationType",
+                    "printedName": "NetworkSDK.AuthorizationType",
+                    "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.AuthorizationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationType",
+                        "printedName": "NetworkSDK.AuthorizationType",
+                        "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO4noneyA2CmF",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO4noneyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.AuthorizationType.Type) -> NetworkSDK.AuthorizationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationType",
+                    "printedName": "NetworkSDK.AuthorizationType",
+                    "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.AuthorizationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationType",
+                        "printedName": "NetworkSDK.AuthorizationType",
+                        "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO6apiKeyyA2CmF",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO6apiKeyyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bearerToken",
+            "printedName": "bearerToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.AuthorizationType.Type) -> NetworkSDK.AuthorizationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthorizationType",
+                    "printedName": "NetworkSDK.AuthorizationType",
+                    "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.AuthorizationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationType",
+                        "printedName": "NetworkSDK.AuthorizationType",
+                        "usr": "s:10NetworkSDK17AuthorizationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO11bearerTokenyA2CmF",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO11bearerTokenyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationType",
+                "printedName": "NetworkSDK.AuthorizationType",
+                "usr": "s:10NetworkSDK17AuthorizationTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationType",
+                "printedName": "NetworkSDK.AuthorizationType",
+                "usr": "s:10NetworkSDK17AuthorizationTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "NetworkSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO9hashValueSivp",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO9hashValueSivp",
+            "moduleName": "NetworkSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK17AuthorizationTypeO9hashValueSivg",
+                "mangledName": "$s10NetworkSDK17AuthorizationTypeO9hashValueSivg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK17AuthorizationTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10NetworkSDK17AuthorizationTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "NetworkSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NetworkSDK17AuthorizationTypeO",
+        "mangledName": "$s10NetworkSDK17AuthorizationTypeO",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "nonHTTPResponse",
+            "printedName": "nonHTTPResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO15nonHTTPResponseyA2CmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO15nonHTTPResponseyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "tokenExpired",
+            "printedName": "tokenExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO12tokenExpiredyA2CmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO12tokenExpiredyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "requestTimeOut",
+            "printedName": "requestTimeOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO14requestTimeOutyA2CmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO14requestTimeOutyA2CmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "requestFailed",
+            "printedName": "requestFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> (Swift.Int) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> NetworkSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO13requestFailedyACSicACmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO13requestFailedyACSicACmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> (Swift.Int, Foundation.Data) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Foundation.Data) -> NetworkSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, data: Foundation.Data)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO06serverC0yACSi_10Foundation4DataVtcACmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO06serverC0yACSi_10Foundation4DataVtcACmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> (Swift.Error) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> NetworkSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO07networkC0yACs0C0_pcACmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO07networkC0yACs0C0_pcACmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "decodingError",
+            "printedName": "decodingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> (Swift.DecodingError) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.DecodingError) -> NetworkSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DecodingError",
+                        "printedName": "Swift.DecodingError",
+                        "usr": "s:s13DecodingErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO08decodingC0yACs08DecodingC0OcACmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO08decodingC0yACs08DecodingC0OcACmF",
+            "moduleName": "NetworkSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToProcess",
+            "printedName": "unableToProcess",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkSDK.NetworkError.Type) -> (Foundation.Data) -> NetworkSDK.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data) -> NetworkSDK.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkSDK.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkSDK.NetworkError",
+                        "usr": "s:10NetworkSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10NetworkSDK0A5ErrorO15unableToProcessyAC10Foundation4DataVcACmF",
+            "mangledName": "$s10NetworkSDK0A5ErrorO15unableToProcessyAC10Foundation4DataVcACmF",
+            "moduleName": "NetworkSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10NetworkSDK0A5ErrorO",
+        "mangledName": "$s10NetworkSDK0A5ErrorO",
+        "moduleName": "NetworkSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Publisher",
+        "printedName": "Publisher",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "assumeHTTP",
+            "printedName": "assumeHTTP()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(data: Foundation.Data, response: Foundation.HTTPURLResponse), NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(data: Foundation.Data, response: Foundation.HTTPURLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPURLResponse",
+                        "printedName": "Foundation.HTTPURLResponse",
+                        "usr": "c:objc(cs)NSHTTPURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Combine9PublisherP10NetworkSDK10Foundation4DataV4data_So13NSURLResponseC8responset6OutputRtzrlE10assumeHTTPAA03AnyB0VyAgH_So17NSHTTPURLResponseCAKtAD0C5ErrorOGyF",
+            "mangledName": "$s7Combine9PublisherP10NetworkSDK10Foundation4DataV4data_So13NSURLResponseC8responset6OutputRtzrlE10assumeHTTPAA03AnyB0VyAgH_So17NSHTTPURLResponseCAKtAD0C5ErrorOGyF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Combine.Publisher, τ_0_0.Output == (data: Foundation.Data, response: Foundation.URLResponse)>",
+            "sugared_genericSig": "<Self where Self : Combine.Publisher, Self.Output == (data: Foundation.Data, response: Foundation.URLResponse)>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "responseData",
+            "printedName": "responseData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Foundation.Data, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Combine9PublisherP10NetworkSDKAD0C5ErrorO7FailureRtz10Foundation4DataV4data_So17NSHTTPURLResponseC8responset6OutputRtzrlE0kH0AA03AnyB0VyAkFGyF",
+            "mangledName": "$s7Combine9PublisherP10NetworkSDKAD0C5ErrorO7FailureRtz10Foundation4DataV4data_So17NSHTTPURLResponseC8responset6OutputRtzrlE0kH0AA03AnyB0VyAkFGyF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Combine.Publisher, τ_0_0.Failure == NetworkSDK.NetworkError, τ_0_0.Output == (data: Foundation.Data, response: Foundation.HTTPURLResponse)>",
+            "sugared_genericSig": "<Self where Self : Combine.Publisher, Self.Failure == NetworkSDK.NetworkError, Self.Output == (data: Foundation.Data, response: Foundation.HTTPURLResponse)>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decoding",
+            "printedName": "decoding(type:decoder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_1"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Combine9PublisherP10NetworkSDKAD0C5ErrorO7FailureRtz10Foundation4DataV6OutputRtzrlE8decoding4type7decoderAA03AnyB0Vyqd__AFGqd__m_qd_0_tSeRd__AA15TopLevelDecoderRd_0_AK5InputRtd_0_r0_lF",
+            "mangledName": "$s7Combine9PublisherP10NetworkSDKAD0C5ErrorO7FailureRtz10Foundation4DataV6OutputRtzrlE8decoding4type7decoderAA03AnyB0Vyqd__AFGqd__m_qd_0_tSeRd__AA15TopLevelDecoderRd_0_AK5InputRtd_0_r0_lF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Combine.Publisher, τ_1_0 : Swift.Decodable, τ_1_1 : Combine.TopLevelDecoder, τ_0_0.Failure == NetworkSDK.NetworkError, τ_0_0.Output == Foundation.Data, τ_1_1.Input == Foundation.Data>",
+            "sugared_genericSig": "<Self, Item, Coder where Self : Combine.Publisher, Item : Swift.Decodable, Coder : Combine.TopLevelDecoder, Self.Failure == NetworkSDK.NetworkError, Self.Output == Foundation.Data, Coder.Input == Foundation.Data>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7Combine9PublisherP",
+        "mangledName": "$s7Combine9PublisherP",
+        "moduleName": "Combine",
+        "genericSig": "<τ_0_0.Failure : Swift.Error>",
+        "sugared_genericSig": "<Self.Failure : Swift.Error>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1703,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2219,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2404,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3148,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3649,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3821,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4323,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5093,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5265,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5529,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5778,
+      "length": 17,
+      "value": "\"Invalid api key\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5857,
+      "length": 9,
+      "value": "\"api_key\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5994,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6367,
+      "length": 22,
+      "value": "\"Invalid Bearer Token\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6422,
+      "length": 23,
+      "value": "\"Bearer \""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6444,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6467,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6554,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6864,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1071,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1077,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1121,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1192,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1254,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1260,
+      "length": 3,
+      "value": "499"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1315,
+      "length": 3,
+      "value": "408"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1460,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Combine+HTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1466,
+      "length": 3,
+      "value": "599"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Endpoint.swift",
+      "kind": "Dictionary",
+      "offset": 504,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Endpoint.swift",
+      "kind": "Dictionary",
+      "offset": 546,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

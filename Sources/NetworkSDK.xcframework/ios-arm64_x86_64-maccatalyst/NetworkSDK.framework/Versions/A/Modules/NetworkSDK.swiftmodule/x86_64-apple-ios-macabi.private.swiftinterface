@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios17.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetworkSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+@_exported import NetworkSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class NetworkManager {
+  public init(configuration: NetworkSDK.NetworkConfiguration)
+  public func get<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  public func patch(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+  public func patch<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  public func post(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+  public func post<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  public func delete(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+  @objc deinit
+}
+extension Combine.Publisher where Self.Output == (data: Foundation.Data, response: Foundation.URLResponse) {
+  public func assumeHTTP() -> Combine.AnyPublisher<(data: Foundation.Data, response: Foundation.HTTPURLResponse), NetworkSDK.NetworkError>
+}
+extension Combine.Publisher where Self.Failure == NetworkSDK.NetworkError, Self.Output == (data: Foundation.Data, response: Foundation.HTTPURLResponse) {
+  public func responseData() -> Combine.AnyPublisher<Foundation.Data, NetworkSDK.NetworkError>
+}
+extension Combine.Publisher where Self.Failure == NetworkSDK.NetworkError, Self.Output == Foundation.Data {
+  public func decoding<Item, Coder>(type: Item.Type, decoder: Coder) -> Combine.AnyPublisher<Item, NetworkSDK.NetworkError> where Item : Swift.Decodable, Coder : Combine.TopLevelDecoder, Coder.Input == Foundation.Data
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case patch
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Endpoint {
+}
+public struct NetworkConfiguration {
+}
+public enum AuthorizationType {
+  case none
+  case apiKey
+  case bearerToken
+  public static func == (a: NetworkSDK.AuthorizationType, b: NetworkSDK.AuthorizationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkError : Swift.Error {
+  case nonHTTPResponse
+  case tokenExpired
+  case requestTimeOut
+  case requestFailed(Swift.Int)
+  case serverError(code: Swift.Int, data: Foundation.Data)
+  case networkError(any Swift.Error)
+  case decodingError(Swift.DecodingError)
+  case unableToProcess(Foundation.Data)
+}
+extension NetworkSDK.HTTPMethod : Swift.Equatable {}
+extension NetworkSDK.HTTPMethod : Swift.Hashable {}
+extension NetworkSDK.HTTPMethod : Swift.RawRepresentable {}
+extension NetworkSDK.AuthorizationType : Swift.Equatable {}
+extension NetworkSDK.AuthorizationType : Swift.Hashable {}
