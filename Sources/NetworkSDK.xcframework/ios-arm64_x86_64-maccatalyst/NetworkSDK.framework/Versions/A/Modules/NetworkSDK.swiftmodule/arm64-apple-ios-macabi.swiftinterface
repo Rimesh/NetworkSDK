@@ -9,8 +9,18 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public class NetworkManager {
+public protocol NetworkManagerProtocol : AnyObject {
+  var decoder: Foundation.JSONDecoder { get set }
+  func get<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  func patch(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+  func patch<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  func post(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+  func post<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
+  func delete(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
+}
+public class NetworkManager : NetworkSDK.NetworkManagerProtocol {
   public init(configuration: NetworkSDK.NetworkConfiguration)
+  public var decoder: Foundation.JSONDecoder
   public func get<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
   public func patch(endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>
   public func patch<T>(type: T.Type, endPoint: NetworkSDK.Endpoint) -> Combine.AnyPublisher<T, NetworkSDK.NetworkError> where T : Swift.Decodable
@@ -41,8 +51,13 @@ public enum HTTPMethod : Swift.String {
   }
 }
 public struct Endpoint {
+  public init(path: Swift.String, method: NetworkSDK.HTTPMethod, authorization: NetworkSDK.AuthorizationType, queryItems: [Foundation.URLQueryItem], bodyParams: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:])
 }
 public struct NetworkConfiguration {
+  public let baseURL: Swift.String
+  public let apiKey: Swift.String?
+  public let bearerToken: Swift.String?
+  public init(baseURL: Swift.String, apiKey: Swift.String? = nil, bearerToken: Swift.String? = nil)
 }
 public enum AuthorizationType {
   case none

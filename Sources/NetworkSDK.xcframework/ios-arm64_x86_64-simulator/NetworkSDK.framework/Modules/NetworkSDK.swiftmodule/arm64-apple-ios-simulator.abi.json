@@ -23,6 +23,398 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NetworkManagerProtocol",
+        "printedName": "NetworkManagerProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "decoder",
+            "printedName": "decoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvp",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvp",
+            "moduleName": "NetworkSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvg",
+                "mangledName": "$s10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvg",
+                "moduleName": "NetworkSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvs",
+                "mangledName": "$s10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvs",
+                "moduleName": "NetworkSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvM",
+                "mangledName": "$s10NetworkSDK0A15ManagerProtocolP7decoder10Foundation11JSONDecoderCvM",
+                "moduleName": "NetworkSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP3get4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP3get4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : NetworkSDK.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "patch",
+            "printedName": "patch(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP5patch8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP5patch8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "patch",
+            "printedName": "patch(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP5patch4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP5patch4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : NetworkSDK.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "post",
+            "printedName": "post(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP4post8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP4post8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "post",
+            "printedName": "post(type:endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_1_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP4post4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP4post4type8endPoint7Combine12AnyPublisherVyqd__AA0A5ErrorOGqd__m_AA8EndpointVtSeRd__lF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : NetworkSDK.NetworkManagerProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(endPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.Bool, NetworkSDK.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkSDK.NetworkError",
+                    "usr": "s:10NetworkSDK0A5ErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP6delete8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP6delete8endPoint7Combine12AnyPublisherVySbAA0A5ErrorOGAA8EndpointV_tF",
+            "moduleName": "NetworkSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkSDK.NetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkSDK.NetworkManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10NetworkSDK0A15ManagerProtocolP",
+        "mangledName": "$s10NetworkSDK0A15ManagerProtocolP",
+        "moduleName": "NetworkSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NetworkManager",
         "printedName": "NetworkManager",
         "children": [
@@ -52,6 +444,92 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "decoder",
+            "printedName": "decoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvp",
+            "mangledName": "$s10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvp",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvg",
+                "mangledName": "$s10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvs",
+                "mangledName": "$s10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvs",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvM",
+                "mangledName": "$s10NetworkSDK0A7ManagerC7decoder10Foundation11JSONDecoderCvM",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -345,6 +823,15 @@
         "moduleName": "NetworkSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NetworkManagerProtocol",
+            "printedName": "NetworkManagerProtocol",
+            "usr": "s:10NetworkSDK0A15ManagerProtocolP",
+            "mangledName": "$s10NetworkSDK0A15ManagerProtocolP"
+          }
         ]
       },
       {
@@ -698,6 +1185,103 @@
         "kind": "TypeDecl",
         "name": "Endpoint",
         "printedName": "Endpoint",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(path:method:authorization:queryItems:bodyParams:headers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "NetworkSDK.Endpoint",
+                "usr": "s:10NetworkSDK8EndpointV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "NetworkSDK.HTTPMethod",
+                "usr": "s:10NetworkSDK10HTTPMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthorizationType",
+                "printedName": "NetworkSDK.AuthorizationType",
+                "usr": "s:10NetworkSDK17AuthorizationTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URLQueryItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLQueryItem",
+                    "printedName": "Foundation.URLQueryItem",
+                    "usr": "s:10Foundation12URLQueryItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NetworkSDK8EndpointV4path6method13authorization10queryItems10bodyParams7headersACSS_AA10HTTPMethodOAA17AuthorizationTypeOSay10Foundation12URLQueryItemVGSDyS2SGARtcfc",
+            "mangledName": "$s10NetworkSDK8EndpointV4path6method13authorization10queryItems10bodyParams7headersACSS_AA10HTTPMethodOAA17AuthorizationTypeOSay10Foundation12URLQueryItemVGSDyS2SGARtcfc",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:10NetworkSDK8EndpointV",
         "mangledName": "$s10NetworkSDK8EndpointV",
@@ -720,6 +1304,229 @@
         "kind": "TypeDecl",
         "name": "NetworkConfiguration",
         "printedName": "NetworkConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK0A13ConfigurationV7baseURLSSvp",
+            "mangledName": "$s10NetworkSDK0A13ConfigurationV7baseURLSSvp",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A13ConfigurationV7baseURLSSvg",
+                "mangledName": "$s10NetworkSDK0A13ConfigurationV7baseURLSSvg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK0A13ConfigurationV6apiKeySSSgvp",
+            "mangledName": "$s10NetworkSDK0A13ConfigurationV6apiKeySSSgvp",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A13ConfigurationV6apiKeySSSgvg",
+                "mangledName": "$s10NetworkSDK0A13ConfigurationV6apiKeySSSgvg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bearerToken",
+            "printedName": "bearerToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10NetworkSDK0A13ConfigurationV11bearerTokenSSSgvp",
+            "mangledName": "$s10NetworkSDK0A13ConfigurationV11bearerTokenSSSgvp",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10NetworkSDK0A13ConfigurationV11bearerTokenSSSgvg",
+                "mangledName": "$s10NetworkSDK0A13ConfigurationV11bearerTokenSSSgvg",
+                "moduleName": "NetworkSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(baseURL:apiKey:bearerToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkConfiguration",
+                "printedName": "NetworkSDK.NetworkConfiguration",
+                "usr": "s:10NetworkSDK0A13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10NetworkSDK0A13ConfigurationV7baseURL6apiKey11bearerTokenACSS_SSSgAGtcfc",
+            "mangledName": "$s10NetworkSDK0A13ConfigurationV7baseURL6apiKey11bearerTokenACSS_SSSgAGtcfc",
+            "moduleName": "NetworkSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:10NetworkSDK0A13ConfigurationV",
         "mangledName": "$s10NetworkSDK0A13ConfigurationV",
@@ -1554,133 +2361,133 @@
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1703,
+      "offset": 1750,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2219,
+      "offset": 2266,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2451,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3148,
+      "offset": 3195,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3649,
+      "offset": 3696,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3821,
+      "offset": 3868,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4323,
+      "offset": 4370,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5093,
+      "offset": 5140,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5265,
+      "offset": 5312,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 5529,
+      "offset": 5576,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 5778,
+      "offset": 5825,
       "length": 17,
       "value": "\"Invalid api key\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 5857,
+      "offset": 5904,
       "length": 9,
       "value": "\"api_key\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5994,
+      "offset": 6041,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6367,
+      "offset": 6414,
       "length": 22,
       "value": "\"Invalid Bearer Token\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6422,
+      "offset": 6469,
       "length": 23,
       "value": "\"Bearer \""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6444,
+      "offset": 6491,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 6467,
+      "offset": 6514,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6554,
+      "offset": 6601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6864,
+      "offset": 6911,
       "length": 3,
       "value": "400"
     },
@@ -1820,14 +2627,14 @@
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Endpoint.swift",
       "kind": "Dictionary",
-      "offset": 504,
+      "offset": 517,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/rimesh\/Work\/Sample Apps\/Networking\/Framework\/NetworkSDK\/NetworkSDK\/Endpoint.swift",
       "kind": "Dictionary",
-      "offset": 546,
+      "offset": 559,
       "length": 3,
       "value": "[]"
     }
